@@ -1,0 +1,14 @@
+version: "3"
+services:
+  tf-udacity:
+    container_name: tf-udacity-py3-customer_segments
+    build: ./tf-image
+    image: tf-udacity-py3-customer_segments
+    # restart: always
+    ports:
+      - "8888:8888"
+      # - "6006:6006"
+    volumes:
+      - ./customer_segments:/notebooks
+      - ./config:/home/tf/config
+    command: bash /home/tf/config/config.sh

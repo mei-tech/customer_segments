@@ -1,4 +1,4 @@
-# finding_donorsasd
+# finding_donors
 Udacity MLE Project 3
 
 ### run instructions
